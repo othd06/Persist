@@ -18,10 +18,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Build docs
-        run: |
-          nim r utils/docgen.nim
-
       - name: Upload docs artifact
         uses: actions/upload-pages-artifact@v3
         with:
